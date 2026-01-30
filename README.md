@@ -41,3 +41,19 @@ Check available slices for a word:
 ```bash
 python ligmafinder.py --slices flag
 ```
+
+## Make executable
+
+Make a symbolic link to PATH
+```
+# find suitable location in PATH
+$ echo $PATH
+[...]:[...]:/path/to/executables/ligmafinder.py:[...] 
+# symlink
+$ ln -s /path/to/ligmafinder.py /path/to/executables/ligmafinder.py #
+```
+
+# TODO
+
+- Add "caching" to optimize runtime?
+- Installation instruction and installation ease
